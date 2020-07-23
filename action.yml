@@ -1,0 +1,16 @@
+name: 'gha-secrets'
+description: 'Generate a config file using GitHub secrets'
+author: 'yuzuy'
+branding:
+  icon: align-left
+  color: orange
+inputs:
+  tmp-file:
+    description: 'Template file'
+    required: true
+  out-file:
+    description: 'Output file name'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/main.js'

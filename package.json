@@ -1,0 +1,20 @@
+{
+  "name": "gha-secrets",
+  "version": "1.0.0",
+  "description": "A library of GitHub Actions to generate a config file using GitHub secrets",
+  "main": "index.js",
+  "repository": "https://github.com/yuzuy/gha-secrets",
+  "author": "yuzuy",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@types/node": "^14.0.24",
+    "ts-loader": "^8.0.1",
+    "typescript": "^3.9.7",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
