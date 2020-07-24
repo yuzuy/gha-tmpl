@@ -14,7 +14,7 @@ async function run() {
         }
         for (const match of matches) {
             const envName = match.replace(/[${}]/g, '')
-            out = out.replace(match, `${process.env[envName]}`)
+            out = out.replace(match, `'${process.env[envName]}'`)
         }
 
         const outFileName = core.getInput('out-file')
