@@ -17,7 +17,7 @@ This action generates a config file using GitHub secrets.
 Generate app.yaml from app.tmp.yaml
 - workflow.yml
 ```yaml
-uses: yuzuy/gha-secrets@v1
+uses: yuzuy/gha-secrets@v1.1
 with:
   tmp-file: 'app.tmp.yaml'
   out-file: 'app.yaml'
