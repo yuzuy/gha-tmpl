@@ -14,20 +14,18 @@ This action generates a config file using GitHub secrets.
 ## Usage
 
 ### Example
-Generate app.yaml from app.tmp.yaml
+Generate .env from .env.tmp
 - workflow.yml
 ```yaml
 uses: yuzuy/gha-secrets@v1.1
 with:
-  tmp-file: 'app.tmp.yaml'
-  out-file: 'app.yaml'
+  tmp-file: '.env.tmp'
+  out-file: '.env'
 env:
   FOO_API_KEY: ${{ secrets.FOO_API_KEY }}
 ```
 
-- app.tmp.yaml
-```yaml
-runtime: nodejs12
-env_variables:
-  FOO_API_KEY: ${{FOO_API_KEY}}
+- .env.tmp
+```env
+FOO_API_KEY=${{FOO_API_KEY}}
 ```
