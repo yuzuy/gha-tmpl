@@ -3,13 +3,13 @@ import * as fs from 'fs'
 
 async function run() {
     try {
-        const tmpFileName = core.getInput('tmp-file')
-        const tmp = fs.readFileSync(tmpFileName).toString()
-        let out = tmp
+        const tmplFileName = core.getInput('tmpl-file')
+        const tmpl = fs.readFileSync(tmplFileName).toString()
+        let out = tmpl
 
-        const matches = tmp.match(/\${{([A-Z_]*)}}/g)
+        const matches = tmpl.match(/\${{([A-Z_]*)}}/g)
         if (matches === null) {
-            core.info('It not found match with /${{([A-Z_]*)}}/g in ' + tmpFileName)
+            core.info('It not found match with /${{([A-Z_]*)}}/g in ' + tmplFileName)
             return
         }
         for (const match of matches) {

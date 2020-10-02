@@ -5,7 +5,7 @@ branding:
   icon: align-left
   color: orange
 inputs:
-  tmp-file:
+  tmpl-file:
     description: 'Template file'
     required: true
   out-file:
