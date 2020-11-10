@@ -23,7 +23,7 @@ Generate .env from .env.tmpl
 ```yaml
 uses: yuzuy/gha-secrets@v1.1
 with:
-  tmpl-file: '.env.tmp'
+  tmpl-file: '.env.tmpl'
   out-file: '.env'
 env:
   FOO_API_KEY: ${{ secrets.FOO_API_KEY }}
