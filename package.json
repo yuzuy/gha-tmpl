@@ -1,6 +1,6 @@
 {
   "name": "gha-secrets",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A library of GitHub Actions to generate a config file using GitHub secrets",
   "main": "index.js",
   "repository": "https://github.com/yuzuy/gha-secrets",
