@@ -1,5 +1,5 @@
-name: 'gha-secrets'
-description: 'Generate a config file using GitHub secrets'
+name: 'gha-tmpl'
+description: 'A simple template engine can be used in GitHub Actions'
 author: 'yuzuy'
 branding:
   icon: align-left

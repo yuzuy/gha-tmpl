@@ -1,6 +1,6 @@
-# gha-secrets action
+# gha-tmpl action
 
-This action generates a config file using GitHub secrets.
+This is a simple template engine can be used in GitHub Actions.
 
 ## Inputs
 
@@ -27,9 +27,17 @@ with:
   out-file: '.env'
 env:
   FOO_API_KEY: ${{ secrets.FOO_API_KEY }}
+  BAR_API_KEY: 'barbarbar'
 ```
 
 - .env.tmpl
-```env
+```dotenv
 FOO_API_KEY=${{FOO_API_KEY}}
+BAR_API_KEY=${{BAR_API_KEY}}
+```
+
+- .env
+```dotenv
+FOO_API_KEY=foofoofoo # this value is set in repository secrets with the name FOO_API_KEY
+BAR_API_KEY=barbarbar
 ```

@@ -1,7 +1,7 @@
 {
-  "name": "gha-secrets",
-  "version": "1.0.3",
-  "description": "A library of GitHub Actions to generate a config file using GitHub secrets",
+  "name": "gha-tmpl",
+  "version": "1.1.0",
+  "description": "A simple template engine can be used in GitHub Actions",
   "main": "index.js",
   "repository": "https://github.com/yuzuy/gha-secrets",
   "author": "yuzuy",
