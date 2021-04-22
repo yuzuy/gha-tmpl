@@ -21,7 +21,7 @@ This is a simple template engine can be used in GitHub Actions.
 Generate .env from .env.tmpl
 - workflow.yml
 ```yaml
-uses: yuzuy/gha-secrets@v1.1
+uses: yuzuy/gha-tmpl@v1.1.0
 with:
   tmpl-file: '.env.tmpl'
   out-file: '.env'
